@@ -14908,6 +14908,12 @@ Look at the graph at the bottom left from the cell above(the visualization creat
 <p>Lets combine a the ingredients together. During the training process, the algorithm looks at instances where it has predicted badly (weak learners), and prioritizes the correct prediction of those instances in the next round of training.  The boosting comes from rerunning this iteration over and over, placing a higher emphasis on the people whose incomes were miscalculated. In this way, the model is training itself through these multiple iterations to understand what data is hard to classify and what is not, giving itself little clues each time. Over time the model combines these little clues to understand the true nature of the data even when it may seem convoluted to the user or customer.
 With each round, the model finds the best learner (or decision tree) to incorporate into the ensemble, repeating the process for the specified number of rounds, or till we can’t improve the predictions further. All the learners are then combined to make a final ensembled model, where they each vote to predict if a person earns more than 50k or not. Usually we take the majority of the votes to make a final prediction. Using this model with the census information of individuals, we can predict the same information for a potential new donor and predict if they earn more than 50K or not, and thus make a decision on the likeliness of them donating to charity.</p>
 <p>A visualization of the ensemble of Desicion Trees which in turn leads to Gradient Boosting Trees is the following: <img src="https://udacity-reviews-uploads.s3.us-west-2.amazonaws.com/_attachments/19273/1524688880/boosting_final.png" alt="Gradient Boosting Trees Model"></p>
+<blockquote><p>sources:</p>
+<ul>
+<li><a href="machinelearningmastery.com/gentle-introduction-gradient-boosting-algorithm-machine-learning/">machinelearningmastery.com</a></li>
+<li><a href="https://www.analyticsvidhya.com/blog/2016/04/complete-tutorial-tree-based-modeling-scratch-in-python/#one">analyticsvidhya</a></li>
+</ul>
+</blockquote>
 
 </div>
 </div>
